@@ -3,12 +3,8 @@ package egitimtwo; //lowercase
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-/**  project içinde generate javadoc var ona bastýktan sonra configure kýsmý boþsa jdk bin dosyasýndan 
- * javadoc.exe seçilir. sonra finish denir. solda package altýnda doc dosyasý görünür. index.html'i web'de 
- * açarsak yaptýklarýmýz görünür.
- * 
- * @author tahay
- *
+/**  In project tab "generate javadoc" then if "configure" null select "javadoc.exe" in jdk bin folder
+ *  then finish. At left under package showed doc folder.open index.html in web *
  */
 public class Conventions { //camel case
 
@@ -30,30 +26,29 @@ public class Conventions { //camel case
 			/**
 			 * oject created
 			 */
-		/* ClassName "C ve N büyük" diye yazýlmasýna camel case denir
-		 int myDog; diye yazýlmasýna lower camel case denir. variables and methods
+		/* ClassName "C and N big" it is camelcase
+		 int myDog; lower camel case. variables and methods
 		 
-		 "ctrl + 7" satýrlarý seçip bu tuþlara basarsam comment olurlar. Source'de bu kýsayollar yazar
-		 '\n' new line, '\t' tab yapar
-		 short 16 bit, ,nt 32 bittir, long 64bittir
-		 mesela 2 int ve long olabilir long ise 2L veya 2l diye yazýlýr
-		 2.2 double veya float olabilir 2.2F veya 2.2f floattýr*/
+		 select lines and "ctrl + 7" then all lines be comment. Source show shortcuts
+		 '\n' new line, '\t' tab 
+		 short 16 bit, ,nt 32 bit, long 64bit
+		 2 can become int and long. If 2 is long writed as 2L or 2l 
+		 2.2 double or float. For float  2.2F or 2.2f float*/
 		int myBin=0b0101;
 		int myInt=0X7E;
 		int myIntt=070; //hexa
-		int a=1_234_567;//1234567 ile aynýdýr. alt tireyi okumaz fakat sonda yazýlmasý illegaldir. 
-		//boolean'da noktadan öncede alt tire yazýlýrsa illegal olur 
+		int a=1_234_567;//1234567 
 		System.out.println(myBin+" "+myInt+" "+myIntt);
-		char c='\u0061'; //a'nýn hexa deðeridir
+		char c='\u0061'; //hex a
 		System.out.println(c);
-		int x2=400; //byte 127 den büyük olmaz yani 8bit yazarsam b2 deðeri bozuk çýkar
-		byte b2=(byte) x2;//cast yapýlýr çünkü boyutlarý farklý
+		int x2=400; //byte <=127 so 7bit 
+		byte b2=(byte) x2;//need cast becauseof size different
 		System.out.println(b2);
-		//mesela short deðeri cast yapmadan int'e atamayýz illegaldir.
-		BigInteger myBigInt=new BigInteger("9999999999847488728264824"); //büyük sayýlar bu þekilde yazýlýr
-		BigDecimal myBigDec=new BigDecimal("1.0E-309"); //büyük sayýlar bu þekilde yazýlýr
+		//short value not declare int without cast. it is illegal
+		BigInteger myBigInt=new BigInteger("9999999999847488728264824"); //big numbers
+		BigDecimal myBigDec=new BigDecimal("1.0E-309"); //big numbers
 		System.out.println(myBigInt+"  "+ myBigDec);
-		/**bu javadoc commend'dir.
+		/**this is javadoc comment.
 		 * 
 		 */
 		

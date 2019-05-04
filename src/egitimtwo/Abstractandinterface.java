@@ -1,13 +1,12 @@
 package egitimtwo;
 
 public abstract class Abstractandinterface implements Interface{
-/*abstract classda en az 1 abstract metod olur
-interface tüm metodlarý abstractýr
-abstract metod gövdesi yok baþka sýnýftan override edilir
-abstract class da obje oluþturulamaz
-obje instance demektir
-abstract metod class.metod(); diye çaðrýlýr
-abstract metod neyin yapýlcaðýný gösterir fakat nasýl yapýlacaðýný göstermez*/
+/*abstract class have mininum 1 abstract method 
+all methods of interface abstractýr
+abstract metod have not body. Overrided different class
+object can not be created in abstract class 
+abstract method called method is class.metod(); 
+abstract metod show what do but do not show how do*/
 public Abstractandinterface() {
 	System.out.println("Abstractandinterface is created");
 }

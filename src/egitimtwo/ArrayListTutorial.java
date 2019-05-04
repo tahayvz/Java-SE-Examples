@@ -43,15 +43,15 @@ while(i.hasNext()) {
 	System.out.println(i.next());
 }
 
-//lists are subtype of collection. listler içerdiði elementlerin sýrasýný korur ve elle sýralanabilir
-//Arraylist ve linkedlist ler var
+//lists are subtype of collection. lists keep order of all value which haved and can order with hand
+
 list.set(0, "Turkey");
 list.set(1, "Istanbul");
 list.set(2, "Yalova");
 System.out.println(list);
 list.remove(1);
 System.out.println(list);
-//arraylist random eklemede hýzlý fakat listenin ortalarýna eklemede yavaþtýr
+//arraylist fast at add random but slow at add middle
 
 HashSet<String> salesRegion =new HashSet<String>();
 salesRegion.add("taha");
@@ -59,7 +59,7 @@ salesRegion.add("istanbul"); //add all valid salesRegion
 salesRegion.add("yalova");
 salesRegion.add("yavuz");//has no effect -duplicate element
 System.out.println(salesRegion);
-//HashSet eklendiði þekilde deðil depolandýðý þekilde sýralanýr
+//HashSet sorted as storage. is not sorted in the order in which it was added
 
 TreeSet<Integer> tree=new TreeSet<Integer>();
 tree.add(88);

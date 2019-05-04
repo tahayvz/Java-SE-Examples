@@ -55,7 +55,7 @@ public class Person {
 	  System.out.println(e.title); 
   }
 }
-/*en alt class objesi oluþturulduðunda:
+/*object created which most subclass:
  * 1.super class static
  * 2.subclass static
  * 3.subclass of subclass static
@@ -67,7 +67,7 @@ public class Person {
  * 9.subclass of subclass constructor
  * */
 
-/*en alt class variable çaðrýldýðýnda
+/*called variable which most subclass
  * 1.call all static blocks from super to sub
  * 2.call variable which called
  * */

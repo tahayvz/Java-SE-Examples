@@ -4,7 +4,7 @@ public class PersonStatic {
 	String firstName;
     
 	static void setFirstName(String newValue) {
-       // firstName = newValue; //obje ile çaðrýlmalý
+       // firstName = newValue; //need object for call
     }
 	
     {
@@ -25,18 +25,18 @@ public class PersonStatic {
       
     public static void main(String[] args) {
         System.out.println(PersonStatic.personCount); 
-        //static motodlar çaðrýlmýþ. 20 sonra 1000 sonra 40 olur. Static metodlar class ile 1 kere çalýþýr
-    	PersonStatic p = new PersonStatic(); //10 sonra 30 olur
-        System.out.println(PersonStatic.personCount); // en son 30 kaldý. Static metodlar  tekrardan çalýþmaz
+        //called static methods. 20 then 1000 then 40. Static metods run with one time when class compiled
+    	PersonStatic p = new PersonStatic(); //10 then 30 
+        System.out.println(PersonStatic.personCount); // last 30. Static metods don't run again
         PersonStatic.personCount = 100; //
-        p = new PersonStatic(); //100 olmuþtu obje oluþturulunca  sonra 10 sonra 30 olur
-        System.out.println(PersonStatic.personCount); //30 kaldý
+        p = new PersonStatic(); //it was 100 then created object then it will be 10 then 30
+        System.out.println(PersonStatic.personCount); //30 
         
-     /* p.setFirstName("Jason"); //obje ile static method çaðrýlmaz
+     /* p.setFirstName("Jason"); //static method not be called with object
         System.out.println( "firstName: " + p.firstName );*/
         
         PersonStatic.setFirstName("Jason");
-        System.out.println( "firstName: " + p.firstName);//static deðiþken obje ile çaðrýlýr
+        System.out.println( "firstName: " + p.firstName);//static value called with obje 
      
         
         

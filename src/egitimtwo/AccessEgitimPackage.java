@@ -1,5 +1,5 @@
 package egitimtwo;
-//import AccessEgitimPackage.*;  yazarsam package içindeki tüm classlar import edilmiþ olurlar
+//import AccessEgitimPackage.*;  import all class
 public class AccessEgitimPackage {
 
 public static void main(String[] args) {

@@ -6,14 +6,14 @@ public class ThisTutorial {
 	
 		ThisTutorial(){
 			this("green", "bmw");  //ThisTutorial("blue", "bmw");
-			//parametreler için kullanýlýr normal metodlarda bu þekilde parametre çaðrýlmaz
+			//used for contructors. another methods don't call like this.
 			
 		}
 	
 		ThisTutorial(String color, String type){
-			//this();//ThisTutorial(); demektir. yazýmý bu þekilde yapýlmaldýr. parametlerde böyle
+			//this(); mean ThisTutorial(); 
 			this.color=color;
-			//this.color instance variable'dýr. saðdaki color local variable'dýr. Renklerden anlaþýlýr
+			//this.color is instance variable. color at right is local variable. understanded from colors
 			this.type=type;
 		}
 		
